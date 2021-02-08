@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        div.bigDiv {
+            display: inline-block;
+            width: 335px;
+            height: 200px;
+            background-color: rgb(255, 255, 255);
+            padding-left: 35px;
+            padding-top: 20px;
+            border: 1px solid black;
+            border-bottom: 0;
+        }
+
+        div {
+
+            width: 135px;
+            height: 120px;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 25px;
+        }
+
+        div.middle {
+            width: 58px;
+            height: 50px;
+            margin-top: 4px;
+            margin-right: 19px;
+        }
+
+        div.bottom {
+            display: block;
+            background-color: rgb(233, 233, 233);
+            width: 370px;
+            height: 60px;
+            border: 1px solid black;
+            border-top: 0;
+        }
+
+        select {
+            width: 135px;
+            height: 31px;
+            color: rgb(100, 100, 100);
+        }
+
+        input {
+            width: 130px;
+            height: 25px;
+            color: rgb(100, 100, 100);
+        }
+
+        input.number {
+            width: 50px;
+            height: 25px;
+        }
+        input.button {
+            background-color: rgb(255, 100, 44);
+            color: white;
+            border-radius: 5px;
+            border: 0;
+            height: 35px;
+            width: 80px;
+            margin-top: 10px;
+            margin-left: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div class="bigDiv">
+            <div>
+
+                <label>Flying from</label>
+                <br>
+                <select name="Flying_from">
+                    <option value='Krungthep'>Krungthep Mahanakhon</option>
+                </select>
+                <br><br>
+
+                <label>Departing</label>
+                <br>
+                <input type="date" name='Departing'>
+
+            </div>
+
+            <div>
+
+                <label>To</label>
+                <br>
+                <select name="To">
+                    <option value='Nakhonpathom'>Nakhonpathom</option>
+                </select>
+                <br><br>
+
+                <label>Returning</label>
+                <br>
+                <input type="date" name='Returning'>
+
+            </div>
+            <br>
+            <div class='middle'>
+
+                <label>Adult</label>
+                <br>
+                <input class="number" type="number" name='Adult' value='1'>
+
+            </div>
+            <div class='middle'>
+
+                <label>Child</label>
+                <br>
+                <input class="number" type="number" name='Child' value='1'>
+
+            </div>
+            <div class='middle'>
+
+                <label>Infant</label>
+                <br>
+                <input class="number" type="number" name='Infant' value='1'>
+
+            </div>
+            <div class='middle'>
+
+                <label style="color: rgb(255, 94, 0);">Currency</label>
+                <br>
+                <select style="width: 57px;" name="Currency">
+                    <option value='PKR'>PKR</option>
+                </select>
+
+            </div>
+        </div>
+        <div class="bottom">
+            <input class="button" type="button" value="SEARCH">
+        </div>
+    </form>
+</body>
+
+</html>
